@@ -1,0 +1,126 @@
+ol, ul{
+    list-style: none;
+}
+
+/* hero */
+.intro{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll,
+}
+
+/* RECIPE */
+.recipe{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+
+.recipe article{
+    order: 1;
+}
+
+.reviews{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+/* recipe ingredients */
+.ingredients{
+    padding: 2rem;
+    background: #f7f6f8;
+    margin: 3rem 0;
+}
+/* recipe steps */
+.steps ol li::before{
+    content: counter(recipeSteps);
+    font-family: 'PT sans';
+    border: 2px solid #ae150d;
+    padding: 5px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 48px;
+}
+.steps ol{
+    counter-reset: recipeSteps;
+}
+.steps ol li{
+    counter-increment: recipeSteps;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+/* more Info */
+.additionalInfo{
+    display: flex;
+    align-self: start;
+    flex-direction: column;
+    max-width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0 0 1.25rem 1.25rem;
+    padding: 0;
+}
+.additionalInfo-header{
+    height: 100px;
+    background-color: #C05800;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+.additionalInfo-header img{
+    width: 100px;
+    object-fit: cover;
+    padding: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+.additionalInfo-content img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 1.25rem;
+}
+
+.additionalInfo-content{
+    margin-top: 3rem;
+    padding: 1rem 1.5rem;
+}
+
+
+@media(min-width: 1024px){
+    .recipe{
+        grid-template-columns: 1fr 33%;
+    }
+    .ingredients{
+        padding: 3rem;
+    }
+    .recipe article{
+        order: initial;
+    }
+    .recipe .additionalInfo{
+        position: relative;
+        top: -100px;
+    }
+}
+@media(min-width: 768px){
+    .ingredients ul{
+        column-count: 2;
+    }
+}
