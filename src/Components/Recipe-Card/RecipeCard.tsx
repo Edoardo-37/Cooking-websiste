@@ -24,6 +24,7 @@ export const RecipeCard = ({ recipe }: any) => {
                 object-fit= 'contain'
                 image={img}
                 alt={alt}
+                loading='lazy'
             />
             <CardContent>
                 <Link href={route} sx={typographyStyles.recipesLink}>{label}</Link>

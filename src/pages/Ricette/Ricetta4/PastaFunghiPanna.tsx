@@ -63,7 +63,7 @@ const PastaFunghiPanna = ({recipePageContent}: any) => {
                 
                 <aside className="additionalInfo">
                     <div className="additionalInfo-header">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3565/3565418.png" alt="recipe icon for additional info section"/>
+                        <img loading='lazy' src="https://cdn-icons-png.flaticon.com/512/3565/3565418.png" alt="recipe icon for additional info section"/>
                     </div>
                     <div className="additionalInfo-content">
                         <ul>
@@ -86,7 +86,7 @@ const PastaFunghiPanna = ({recipePageContent}: any) => {
                                 <Typography sx={typographyStyles.pBody}>Porzioni: <b>{portions} Persone</b></Typography>
                             </li>
                         </ul>
-                        <img width='200px' src={addInfoImg} alt={addInfoImgAltText} title={addInfoImgAltText} />
+                        <img loading='lazy' width='200px' src={addInfoImg} alt={addInfoImgAltText} title={addInfoImgAltText} />
                         <Link href="/form-iscrizione" sx={[linkStyles.inPageLink, { color:'#3d5926', display: 'flex', alignItems:'center', justifyContent:'center', padding: '1rem 1.5rem'}]}> Iscriviti alla Newsletter! <ArrowForwardIcon/> </Link>
 
                     </div>

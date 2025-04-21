@@ -63,7 +63,7 @@ const RisoZafferazno = ({recipePageContent}: any) => {
                 
                 <aside className="additionalInfo">
                     <div className="additionalInfo-header">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3565/3565418.png" alt="recipe icon for additional info section"/>
+                        <img loading='lazy' src="https://cdn-icons-png.flaticon.com/512/3565/3565418.png" alt="recipe icon for additional info section"/>
                     </div>
                     <div className="additionalInfo-content">
                         <ul>
