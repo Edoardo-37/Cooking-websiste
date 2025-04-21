@@ -30,8 +30,9 @@ root.render(
           <Route path={recipeCardContent.pastaAlPomodoro.route} element={<PastaAlPomodoro recipePageContent={recipePageContent.pastaAlPomodoro} />} /> 
           <Route path={recipeCardContent.risoZafferano.route} element={<RisoZafferazno recipePageContent={recipePageContent.risoZafferano}  />} /> 
           <Route path={recipeCardContent.pastaFunghiPanna.route} element={<PastaFunghiPanna recipePageContent={recipePageContent.pastaFunghiPanna}  />} /> 
-          <Route path={recipeCardContent.bocconciniPolloAlLimone.route} element={<BocconciniPolloLimone recipePageContent={recipePageContent.bocconciniPolloAlLimone}  />} />         <Route path="/form-iscrizione" element={<Newsletter />} />
-          <Route path={recipeCardContent.involtiniDiZucchine.route} element={<InvoltiniDiZucchine recipePageContent={recipePageContent.involtiniDiZucchine}  />} />         <Route path="/form-iscrizione" element={<Newsletter />} />
+          <Route path={recipeCardContent.bocconciniPolloAlLimone.route} element={<BocconciniPolloLimone recipePageContent={recipePageContent.bocconciniPolloAlLimone}  />} />
+          <Route path={recipeCardContent.involtiniDiZucchine.route} element={<InvoltiniDiZucchine recipePageContent={recipePageContent.involtiniDiZucchine}  />} />
+          <Route path="/form-iscrizione" element={<Newsletter />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

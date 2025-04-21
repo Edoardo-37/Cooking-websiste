@@ -86,7 +86,7 @@ const ZuppaDiPiselli = ({ recipePageContent }: any) => {
                                 </li>
                             </ul>
                             <img width='200px' src={addInfoImg} alt={addInfoImgAltText} title={addInfoImgAltText} />
-                            <Link href="/form-iscrizione" sx={[linkStyles.inPageLink, { color:'#3d5926', display: 'flex', alignItems:'center', justifyContent:'center', padding: '1rem 1.5rem'}]}> Iscriviti alla Newsletter! <ArrowForwardIcon/> </Link>ì
+                            <Link href="/form-iscrizione" sx={[linkStyles.inPageLink, { color:'#3d5926', display: 'flex', alignItems:'center', justifyContent:'center', padding: '1rem 1.5rem'}]}> Iscriviti alla Newsletter! <ArrowForwardIcon/> </Link>
                         </div>
                     </aside>
                 </Box>
