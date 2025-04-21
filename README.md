@@ -2,6 +2,10 @@
 
 This is is a webiste built with `React with parcel framework as build tool`.
 
+### NOTE:
+The `node_modules` folder isn't included; to install the dependencies and make the application functional, open the terminal and run `npm install` command. 
+
+---
 `Contents`:
 1. Landing page with a CTA for Newsletter form and a list of the most popular recipes.
 2. Recipe list page sorted by category.
