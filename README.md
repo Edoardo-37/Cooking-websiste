@@ -1,6 +1,6 @@
 # 'Sapori e Profumi' Cooking website
 
-This is is a webiste built with `React with parcel on TypeScript XML files`.
+This is is a webiste built with `React with parcel framework as build tool`.
 
 `Contents`:
 1. Landing page with a CTA for Newsletter form and a list of the most popular recipes.
