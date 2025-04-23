@@ -29,9 +29,9 @@ export function App() {
           <div className='hero-content'>
             <Typography sx={typographyStyles.heroheading}>Ricette di tendenza</Typography>
             <hr />
-            <Typography sx={typographyStyles.pHero}>Scopri le ricette più popolari del periodo. <br />Non sai come farle? <br /> Non preoccuparti, troverai tutte le informazioni per le loro preparazioni.</Typography>
+            <Typography sx={typographyStyles.pHero}>Scopri le ricette più popolari del periodo. Non conosci il procedimento? <br /> Non preoccuparti, troverai tutte le informazioni per le loro preparazioni.</Typography>
             <Typography sx={typographyStyles.pHero}>Iscriviti ora per non perderti nuove ricette!</Typography>
-            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
               <Link sx={linkStyles.CTA} onClick={() => navigate('/form-iscrizione')}>Iscriviti</Link>
             </Box>
           </div>
