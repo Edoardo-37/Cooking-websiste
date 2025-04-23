@@ -9,7 +9,8 @@ img[alt]{
   font-style: oblique;
 }
 
-/* hero section - flex container */
+/* - - -  Landing Page: style - - - */
+/* hero */
  .hero{  
   width: 100%;
   height: 600px;
@@ -17,7 +18,7 @@ img[alt]{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)), url('img/hero.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)), url('public/hero.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: scroll; 
@@ -42,7 +43,7 @@ hr{
   border: 1.5px solid black;
 }
 
-/* recipes section */
+/* recipes grid section */
 .moreInfo,
 .recipes{
   width: 90%;
@@ -67,5 +68,117 @@ hr{
 @media (min-width: 1200px){   /* grid content */
   .recipes{
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+
+
+/* - - - Page 'Ricette': style - - - */
+
+/* hero */
+.header{
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1470549813517-2fa741d25c92?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  background: #C05800;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+/* recipe list */
+.recipes-list{
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.recipes-list hr{
+  margin: 1rem 0 1rem 0;
+  border: 1.5px solid #AE150D;
+}
+
+.list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 24px;
+  padding: 1rem 0.5rem;
+}
+
+/* media queries */
+@media (max-width: 768px){
+  .header .content{
+  margin: 1.5rem;
+  }
+  .list{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  }
+  .recipes-list{
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
+  }
+}
+
+
+/* - - -  'Newsletter' Page: style - - - */
+
+.form-container{
+  height: 120dvh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1495521821757-a1efb6729352?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  margin: 2rem;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* media queries */
+@media(min-width: 768px){
+  .form-container{
+      height: 100dvh;
+  }
+} 
+
+@media(max-width: 768px){
+  form{
+      width: 100%;
+  }
+}
+
+@media (orientation: landscape) and (hover: none) and (pointer: coarse){ /* To intercept only landscape mobile device and not appling the styles to landascape desktop PC*/
+  .form-container {
+      height: 200vh;
   }
 }
