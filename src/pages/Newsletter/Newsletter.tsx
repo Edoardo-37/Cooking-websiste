@@ -6,8 +6,6 @@ import { Box, TextField, FormControlLabel, FormControl, FormLabel, RadioGroup, R
 import { Navbar } from '../../Components/Navbar/Navbar'
 import { Footer } from '../../Components/Footer/Footer';
 import { typographyStyles } from '../../Components/common/typography/typographyStyles';
-import './newsletter.css'
-
 const INITIAL_FORM_STATE = { // mettendo il valore iniziale dello state nello scope globale lo psossiamo suare per le funzioni al meglio
     name: "",
     surname: '',
