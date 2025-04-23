@@ -8,7 +8,6 @@ import { typographyStyles } from '../../Components/common/typography/typographyS
 import { RecipeCard } from '../../Components/Recipe-Card/RecipeCard';
 import { Footer } from '../../Components/Footer/Footer';
 import { recipeCardContent } from '../../Components/Recipe-Card/recipeCardContent';
-import './ricette.css'
 
 export const Ricette = () => {
   const theme = createTheme({
