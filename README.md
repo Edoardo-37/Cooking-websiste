@@ -18,4 +18,4 @@ The `node_modules` folder isn't included; to install the dependencies and make t
 
 ---
 ### PS:
-The images are displayed via their external links (internet) and they aren't saved into `src/img` folder. In that folder there is only the BG image for landing page and the Favicon.
+The images are displayed via their external links (internet) and they aren't saved into `src/public` folder. In that folder there is only the BG image for landing page and the Favicon.
