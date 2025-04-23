@@ -2,7 +2,7 @@ import { fontWeight, letterSpacing } from "@mui/system";
 
 export const typographyStyles = {
     heroheading: {
-        fontSize: '4rem',
+        fontSize: '3.25rem',
         width: '100%',
         margin: '0 auto',
         color: '#ffffff',
