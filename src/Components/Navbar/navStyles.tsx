@@ -24,6 +24,7 @@ export const navStyles = {
         color: '#000000',
         fontWeight: 'bold',
         fontSize: '1rem',
+        cursor: 'pointer',
         display:{
             xs: 'none',
             sm: 'none',
